@@ -28,7 +28,7 @@ public class DataSourceConfiguration {
     private final static String DATASOURCE_TAG = "db";
     @Autowired
     ApplicationContext context;
-    @ApolloConfig(value ="spring.datasource" )
+    @ApolloConfig
     Config config;
     @Bean
     public DynamicDataSource dynamicDataSource() {
